@@ -1,0 +1,17 @@
+<script type="text/discourse-plugin" version="0.8">
+// clicking on the text will take you to top level of the Discourse instance
+api.decorateWidget('home-logo:after', helper => {
+    const showExtraInfo = helper.attrs.minimized;
+        if(!showExtraInfo) {
+            return helper.h('div', {
+                style: 'width:150px;float:right;font-size:1.4em;font-weight:bold;padding-top:10px;padding-left:5px;'
+            },
+                [
+                helper.h('a.nav-link', {
+                    href:'/', 
+                    text:'Forum Home'
+                })
+            ]);
+        }
+});
+</script>

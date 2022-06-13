@@ -1,0 +1,38 @@
+/* tiaa-login button is attached to the header icons to replace the existing login button */
+.tiaa-login-button {
+   margin-top: .7em;
+}
+
+.tiaa-user-icon {
+    float: left;
+    display: flex;
+}
+
+.tiaa-login-text {
+    float: right;
+}
+/* get rid of the supplied login button - dangerous if something else is screwed up. */
+.header-buttons .login-button {
+    display: none;
+}
+/* don't display admin/moderator profiles and site information if not logged in */
+html.anon .widget-link.about-link,
+html.anon .nav-pills .nav-item-about,
+html.anon .about.admins,
+html.anon .about.moderators {
+    display: none;
+}
+/* toggle the header based on logged on state */
+html.anon #tiaa-header-loggedon {
+    display: none;
+}
+html.anon #tiaa-header-loggedoff {
+    display: block;
+}
+html:not(.anon) #tiaa-header-loggedon {
+    display: block;
+
+}
+html:not(.anon) #tiaa-header-loggedoff {
+    display: none;
+}
