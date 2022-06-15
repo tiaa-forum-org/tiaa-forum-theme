@@ -1,2 +1,2 @@
-# Trial-tiaa-forum-theme
+# tiaa-forum-theme
 Discourse theme used for production forum.
