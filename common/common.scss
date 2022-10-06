@@ -1,7 +1,7 @@
 /*
  * 10/05/22 - remove cakeday option from hamburger menu
  */
-.cakeday-link {
+.menu-panel .widget-link, .menu-panel .categories-link.cakeday-link {
    display: none;
 }
 /* tiaa-login button is attached to the header icons to replace the existing login button */
